@@ -22,6 +22,6 @@ public class Launcher : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(missilePrefab);
+        Instantiate(missilePrefab, spawnPoint.position, spawnPoint.rotation);
     }
 }
